@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Home from './component/Home'
-
+import App from './module/app'
+if(module.hot){
+    module.hot.accept()
+}
+const rootNode = document.getElementById('app')
 ReactDom.render(
-  <Home />, 
-  document.getElementById('app')
+    <App />,
+    rootNode
 )

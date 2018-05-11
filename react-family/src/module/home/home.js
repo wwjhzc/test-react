@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 class Home extends Component {
-    reander() {
+    render() {
         return (
             <div className="our-home">
-                Hello React
+                Hello Home234234
             </div>
         )
     }
