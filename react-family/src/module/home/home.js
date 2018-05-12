@@ -3,7 +3,7 @@ class Home extends Component {
     render() {
         return (
             <div className="our-home">
-                Hello Home234234
+                Hello Home23123
             </div>
         )
     }

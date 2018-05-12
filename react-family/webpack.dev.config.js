@@ -8,6 +8,12 @@ module.exports = {
      path:path.join(__dirname, './dist'),
      filename:'bundle.js'
  },
+ resolve: {
+    alias: {
+        module: path.join(__dirname, 'src/module'),
+        component: path.join(__dirname, 'src/component'),
+    }
+ },
  module: {
      rules: [{
          test: /\.js$/,
@@ -16,9 +22,12 @@ module.exports = {
      }]
  },
  devServer:{
-    contentBase: path.join(__dirname, './'),//url根目录，默认指向项目根目录
+    contentBase: path.join(__dirname, './dist'),//url根目录，默认指向项目根目录
     historyApiFallback: true,//当使用HTML5 History API 时，任意的404响应都可能需要被替代为 index.html
-    open:false, //自动打开浏览器
+    hot: true,
+    progress: true,
+    inline: true,
+    open:true, //自动打开浏览器
     port:8099 //在指定的端口打开
 }
 }

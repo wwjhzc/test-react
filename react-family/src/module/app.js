@@ -4,9 +4,9 @@ import {
     Route,
     Switch,
 } from 'react-router-dom'
-import Home from './home/home'
-import Music from '../module/music/music'
-import Video from '../module/video/video'
+import Home from 'module/home/home'
+import Music from 'module/music/music'
+import Video from 'module/video/video'
 const App = () => (
     <Router>
         <Switch>
